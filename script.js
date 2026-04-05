@@ -94,19 +94,20 @@ const translations = {
       "Creation of a web server to simulate the greenhouse effect, hosted on an ESP32 board. Use of humidity and temperature sensors, recording results in CSV.",
     "projects.eduTech": "Technologies: Python, HTML5, CSS3.",
 
-    "projects.gameTitle": "UNIVERSITY PROJECT",
+    "projects.gameTitle": "C-ENGINE ARCHITECTURE",
     "projects.gameMeta": "University project • 2025–2026",
     "projects.gameText":
       "Full implementation of the game engine and movement logic. Creation of an ergonomic console interface with input error handling, all in C.",
     "projects.gameTech":
       "Technologies: C, error handling, game engine architecture.",
 
-    "projects.saeTitle": "UNIVERSITY PROJECT",
+    "projects.saeTitle": "VIRTUALIZED DEV-STATION",
     "projects.saeMeta": "University project • 2025–2026",
     "projects.saeText":
       "Setup of a development workstation. Configuration of a virtual machine in dual boot Windows 10/Ubuntu with shared partition and user management.",
     "projects.saeTech":
       "Technologies: Windows 10, Ubuntu, virtualization, user management.",
+    "projects.sae2Title": "LISIEUX NORMANDY COMMUNITY",
     "projects.sae2Text": "Development of a web platform and database to support the Local Travel Plan (PLD) for a community of 53 municipalities. The project aims to identify the mobility needs of 73,700 residents while addressing energy transition challenges.",
     "projects.sae2Tech": "HTML5, CSS3, SQL, UI/UX Design, Project Management (Backlog).",
 
@@ -154,14 +155,15 @@ const translations = {
       "Création d’un serveur web pour simuler l’effet de serre, hébergé sur une carte ESP32. Utilisation de capteurs d’humidité et de température, enregistrement des résultats en CSV.",
     "projects.eduTech": "Technologies : Python, HTML5, CSS3.",
 
-    "projects.gameTitle": "PROJET UNIVERSITAIRE",
+    "projects.gameTitle": "ARCHITECTURE C-ENGINE",
     "projects.gameMeta": "Projet universitaire • 2025–2026",
     "projects.gameText":
       "Implémentation complète du moteur de jeu et de la logique de déplacement. Création d’une interface console ergonomique avec gestion des erreurs de saisie, le tout en langage C.",
     "projects.gameTech":
       "Technologies : C, gestion d’erreurs, architecture de moteur de jeu.",
 
-    "projects.saeTitle": "PROJET UNIVERSITAIRE",
+    "projects.saeTitle": "POSTE DE DÉVELOPPEMENT VIRTUEL",
+    "projects.sae2Title": "COMMUNAUTÉ LISIEUX NORMANDIE",
     "projects.saeMeta": "Projet universitaire • 2025–2026",
     "projects.saeText":
       "Installation d’un poste pour le développement. Configuration d’une machine virtuelle en dual boot Windows 10/Ubuntu avec partitionnement commun et gestion d’utilisateurs.",
