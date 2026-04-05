@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Clément Bazin</div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#experience" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <label class="switch theme-switch">
+          <input id="theme-toggle" type="checkbox" />
+          <span class="slider">
+            <div class="star star_1"></div>
+            <div class="star star_2"></div>
+            <div class="star star_3"></div>
+            <svg viewBox="0 0 16 16" class="cloud_1 cloud">
+              <path
+                transform="matrix(.77976 0 0 .78395-299.99-418.63)"
+                fill="#fff"
+                d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+              ></path>
+            </svg>
+          </span>
+        </label>
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">
+            <img width="24" height="24" src="https://img.icons8.com/color/48/france.png" alt="france" />
+          </button>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">
+            <img width="24" height="24" src="https://img.icons8.com/color/48/usa.png" alt="usa" />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Clément Bazin</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" data-i18n="nav.about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" data-i18n="nav.skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" data-i18n="nav.projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" data-i18n="nav.contact" onclick="toggleMenu()">Contact</a></li>
+          <li class="menu-theme-switcher">
+            <label class="switch">
+              <input id="theme-toggle-mobile" type="checkbox" />
+              <span class="slider">
+                <div class="star star_1"></div>
+                <div class="star star_2"></div>
+                <div class="star star_3"></div>
+                <svg viewBox="0 0 16 16" class="cloud_1 cloud">
+                  <path
+                    transform="matrix(.77976 0 0 .78395-299.99-418.63)"
+                    fill="#fff"
+                    d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+                  ></path>
+                </svg>
+              </span>
+            </label>
+          </li>
+          <li class="menu-lang-switcher">
+            <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr'); toggleMenu();">
+              <img width="24" height="24" src="https://img.icons8.com/color/48/france.png" alt="france" />
+            </button>
+            <button class="lang-btn" data-lang="en" onclick="setLanguage('en'); toggleMenu();">
+              <img width="24" height="24" src="https://img.icons8.com/color/48/usa.png" alt="usa" />
+            </button>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="image.png" alt="Clément Bazin Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1" data-i18n="profile.greeting">Hello, I'm</p>
+        <h1 class="title">Clément Bazin</h1>
+        <p class="section__text__p2" data-i18n="profile.role">Computer Science Student</p>
+        <div class="btn-container">
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/clément-bazin-095612360'"
+          />
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Clemzzz'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1" data-i18n="about.subtitle">Get To Know More</p>
+      <h1 class="title" data-i18n="about.title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="imagewait.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3 data-i18n="about.experienceTitle">Experience</h3>
+              <p data-i18n="about.experienceText">3 years <br />Basic Developement</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3 data-i18n="about.educationTitle">Education</h3>
+              <p data-i18n="about.educationText">Computer Science <br />IUT Campus 3 IFS</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p data-i18n="about.text">
+              My name is Clément, and I am currently pursuing a Bachelor’s degree in Computer Science at the IUT in Ifs (Campus 3). Passionate about programming and systems, I have grown since graduating from high school (with a focus on Math and Computer Science) to become a versatile future engineer. With proficiency in several programming languages (C, Python, Java, SQL, Shell), I am a persistent and curious individual, capable of working both independently and as part of a team. An avid tennis player and music lover, I enjoy tackling complex challenges and turning ideas into functional solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1" data-i18n="skills.subtitle">Explore My</p>
+      <h1 class="title" data-i18n="skills.title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title" data-i18n="skills.devTitle">Developpement</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="html-5.png"
+                  alt="HTML icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 data-i18n="skills.htmlTitle">HTML</h3>
+                  <p data-i18n="skills.basic">Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="css-3.png"
+                  alt="CSS icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 data-i18n="skills.cssTitle">CSS</h3>
+                  <p data-i18n="skills.basic">Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="python.png"
+                  alt="Python icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 data-i18n="skills.pythonTitle">Python</h3>
+                  <p data-i18n="skills.basic">Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="JavaScript-logo.png"
+                  alt="java script icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 data-i18n="skills.jsTitle">JavaScript</h3>
+                  <p data-i18n="skills.notion">Notion</p>
+                </div>
+              </article>
+              <article>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/sql.png" alt="sql"/>
+                <div>
+                  <h3 data-i18n="skills.sqlTitle">SQL</h3>
+                  <p data-i18n="skills.basic">Basic</p>
+                </div>
+              </article>
+              <article>
+                <img width="50" height="50" src="https://img.icons8.com/sf-ultralight-filled/50/console.png" alt="console"/>
+                <div>
+                  <h3 data-i18n="skills.bashTitle">Bash / Shell</h3>
+                  <p data-i18n="skills.basic">Basic</p>
+                </div>
+              </article>
+              <article>
+                <img width="48" height="48" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
+                <div>
+                  <h3 data-i18n="skills.javaTitle">Java</h3>
+                  <p data-i18n="skills.basic">Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C_Programming_Language.svg.png"
+                  alt="java script icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 data-i18n="skills.cTitle">C</h3>
+                  <p data-i18n="skills.basic">Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1" data-i18n="projects.subtitle">Découvrez mes</p>
+      <h1 class="title" data-i18n="projects.title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container project-card">
+            <h2 class="experience-sub-title project-title" data-i18n="projects.eduTitle">
+              PROJET ÉDUC’ARTE
+            </h2>
+            <p class="project-meta" data-i18n="projects.eduMeta">Projet pédagogique • 2024–2025</p>
+            <p data-i18n="projects.eduText">
+              Création d’un serveur web pour simuler l’effet de serre, hébergé sur une
+              carte ESP32. Utilisation de capteurs d'humidité et de température,
+              enregistrement des résultats en CSV.
+            </p>
+            <p class="project-tech" data-i18n="projects.eduTech">Technologies : Python, HTML5, CSS3.</p>
+          </div>
+          <div class="details-container color-container project-card">
+            <h2 class="experience-sub-title project-title" data-i18n="projects.gameTitle">
+              PROJET UNIVERSITAIRE
+            </h2>
+            <p class="project-meta" data-i18n="projects.gameMeta">Projet universitaire • 2025–2026</p>
+            <p data-i18n="projects.gameText">
+              Implémentation complète du moteur de jeu et de la logique de
+              déplacement. Création d’une interface console ergonomique avec gestion
+              des erreurs de saisie, le tout en langage C.
+            </p>
+            <p class="project-tech" data-i18n="projects.gameTech">Technologies : C, gestion d’erreurs, architecture de moteur de jeu.</p>
+          </div>
+          <div class="details-container color-container project-card">
+            <h2 class="experience-sub-title project-title" data-i18n="projects.saeTitle">
+              PROJET UNIVERSITAIRE
+            </h2>
+            <p class="project-meta" data-i18n="projects.saeMeta">Projet universitaire • 2025–2026</p>
+            <p data-i18n="projects.saeText">
+              Installation d'un poste pour le développement. Configuration d'une
+              machine virtuelle en dual boot Windows 10/Ubuntu avec partitionnement
+              commun et gestion d'utilisateurs.
+            </p>
+            <p class="project-tech" data-i18n="projects.saeTech">Technologies : Windows 10, Ubuntu, virtualisation, gestion des utilisateurs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1" data-i18n="contact.subtitle">Get in Touch</p>
+      <h1 class="title" data-i18n="contact.title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:clementbazin@icloud.com">clementbazin@icloud.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com" data-i18n="contact.linkedin">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#experience" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Clément Bazin. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
