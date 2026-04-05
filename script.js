@@ -107,6 +107,8 @@ const translations = {
       "Setup of a development workstation. Configuration of a virtual machine in dual boot Windows 10/Ubuntu with shared partition and user management.",
     "projects.saeTech":
       "Technologies: Windows 10, Ubuntu, virtualization, user management.",
+    "projects.sae2Text": "Development of a web platform and database to support the Local Travel Plan (PLD) for a community of 53 municipalities. The project aims to identify the mobility needs of 73,700 residents while addressing energy transition challenges.",
+    "projects.sae2Tech": "HTML5, CSS3, SQL, UI/UX Design, Project Management (Backlog).",
 
     "contact.subtitle": "Get in Touch",
     "contact.title": "Contact Me",
@@ -165,6 +167,8 @@ const translations = {
       "Installation d’un poste pour le développement. Configuration d’une machine virtuelle en dual boot Windows 10/Ubuntu avec partitionnement commun et gestion d’utilisateurs.",
     "projects.saeTech":
       "Technologies : Windows 10, Ubuntu, virtualisation, gestion des utilisateurs.",
+    "projects.sae2Text": "Création d'un site web et d'une base de données pour accompagner l'élaboration du Plan Local de Déplacements (PLD). L'objectif est de recenser les besoins de mobilité de 73 700 habitants face aux enjeux de la transition énergétique",
+    "projects.sae2Tech": "HTML5, CSS3, SQL, Maquettage (UI/UX), Gestion de projet (Backlog).",
 
     "contact.subtitle": "Entrons en contact",
     "contact.title": "Contactez-moi",
